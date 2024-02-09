@@ -27,11 +27,11 @@ Run in your terminal `ruby stock_picker.rb`
 My first attempt was rather long with nested loops but with discovery of combination method I have made the shorter and more readable. 
 
 The return value at first was:
-`pair_profit.key(pair_profit.values.max)`
+> `pair_profit.key(pair_profit.values.max)`
 But I noticed this only return first occurrence of the max value key. The solution was to chain the method:
-`pair_profit.select {|pair, profit| profit == pair_profit.values.max}.keys`
+>`pair_profit.select {|pair, profit| profit == pair_profit.values.max}.keys`
 Working solution but return nested array to deal with this I've added:
-`.flatten`
+> `.flatten`
 
 
 
